@@ -2,6 +2,10 @@
 
 [![Build Status](https://travis-ci.org/pi0/vue-for-idea.svg?branch=master)](https://travis-ci.org/pi0/vue-for-idea)
 
+# HEY!
+Official jetbrains plugin is available for 2017.1 EAP Builds.
+[See Here](https://plugins.jetbrains.com/idea/plugin/9442-vue-js)
+
 # Requires
 * IntelliJ IDEA 15(base) 
 * Java 8 
