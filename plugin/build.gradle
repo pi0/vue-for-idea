@@ -1,0 +1,27 @@
+plugins {
+    id "org.jetbrains.intellij" version "0.1.10"
+}
+apply plugin: 'org.jetbrains.intellij'
+apply plugin: 'java'
+intellij {
+    type = 'IU'
+    version 'IU-15.0.2'
+    pluginName 'vue-for-idea'
+    plugins = ['JavaScriptLanguage', 'coffeescript', 'sass', 'CSS']
+    updateSinceUntilBuild false
+    sameSinceUntilBuild false
+//    downloadSources !Boolean.valueOf(System.getenv('CI'))
+    downloadSources false
+    publish {
+        username 'henjue'
+        pluginId '9188'
+        password Boolean.valueOf(System.getenv('CI')) ? System.getenv('PLUGIN_PASSWORD') : PLUGIN_PASSWORD
+        channel System.getenv('PLUGIN_CHANNEL') ?: ''
+    }
+}
+dependencies {
+    compile group: 'org.codehaus.jettison', name: 'jettison', version: '1.3.7'
+}
+group 'io.j99'
+def majorVersion = '1.0.74'
+version "${Boolean.valueOf(System.getenv('CI')) ? "$majorVersion-${System.getenv('CIRCLE_BUILD_NUM')}" : "$majorVersion"}"
