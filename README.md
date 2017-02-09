@@ -1,7 +1,6 @@
-# Vue for Idea
+# Vue for Idea (pi0 edition fork!)
 
-[![Build Status](https://travis-ci.org/henjue/vue-for-idea.svg?branch=develop)](https://travis-ci.org/henjue/vue-for-idea)
-[![Join the chat at https://gitter.im/henjue/vue-for-idea](https://badges.gitter.im/henjue/vue-for-idea.svg)](https://gitter.im/henjue/vue-for-idea?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Build Status](https://travis-ci.org/pi0/vue-for-idea.svg?branch=develop)](https://travis-ci.org/pi0/vue-for-idea)
 
 # Requires
 * IntelliJ IDEA 15(base) 
@@ -10,35 +9,21 @@
 * [Vue-cli](https://github.com/vuejs/vue-cli)
 
 #Install the Plugin
- Click "Preferences"->"Plugins"->"Browse Repositories",search "vue-for-idea".
 
-## Install the Plugin Alpha version:
-1. Use [the instructions](https://www.jetbrains.com/help/idea/2016.1/managing-enterprise-plugin-repositories.html?origin=old_help)
-2. Paste the URL 
-```
-https://plugins.jetbrains.com/plugins/alpha/9188
-```
+[TODO]
 
 #How to build this plugin 
+
 ```bash
-git checkout https://github.com/henjue/vue-for-idea.git -b develop
+git checkout https://github.com/pi0/vue-for-idea.git
 ```
+
 Run in Idea
 ```bash
 ./gradlew runIdea 
 ```
+
 Build plugin jar library
 ```bash
 ./gradlew buildPlugin
 ```
-
-##Todo
-- [ ] Grammar
- - [x] highlighter
- - [x] autocomplete
- - [ ] reference contributor and 
- - [ ] Go To Symbol Contributor
- - [x] Support other "lang"
-- [ ] Project Wizard
- - [x] new project and new module(test)
-
