@@ -1,6 +1,6 @@
 # Vue for Idea (pi0 edition fork!)
 
-[![Build Status](https://travis-ci.org/pi0/vue-for-idea.svg?branch=develop)](https://travis-ci.org/pi0/vue-for-idea)
+[![Build Status](https://travis-ci.org/pi0/vue-for-idea.svg?branch=master)](https://travis-ci.org/pi0/vue-for-idea)
 
 # Requires
 * IntelliJ IDEA 15(base) 
